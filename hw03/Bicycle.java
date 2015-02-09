@@ -33,20 +33,13 @@ public class Bicycle {
         double nInches = nCounts * wheelDiameter * PI;
         double nFeet = nInches / 12;
         double nMiles = nFeet / feetPerMile;
-        //int intHundredMiles = (int) nMiles * 100;
-        //int intMiles = intHundredMiles / 100;
-        //convert time to hours
+      
+        //convert time Sto hours
         double nMinutes = nSeconds / secondsPerMinute;
         double nHours = nMinutes / 60;
         //calculcate miles per hour, and then multiply and divide by 100 to get 2 decimal points
         double averageMPH = nMiles / nHours;
-        //int intHundredAverageMPH = (int) averageMPH * 100;
-        //int intAverageMPH = intHundredAverageMPH / 100;
-        
-        
         //print results
-        //double round = Math.round(nMiles*100)/100.00;
-        //double round1 = Math.round(averageMPH*100)/100.00;
         System.out.printf("The distance was %.2f miles \n", nMiles);
         System.out.printf("The average speed was %.2f mph \n", averageMPH);
         
