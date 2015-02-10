@@ -5,6 +5,8 @@
 //Then start by guessing the square root is x/3. Then improve your 
 //estimate by replacing “guess” in the following expression with your 
 //first estimate, x/3: (guess*guess*guess+x)/(3*guess*guess) 
+//Camden Fischer
+//2/10/15
 //Improve your estimate four more times by continuing to 
 //substitute your last estimate for “guess” in the expression above.  
 //For example, to find a crude guess for the cube root of 27, guess 27/3=9. 

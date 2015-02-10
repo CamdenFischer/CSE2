@@ -1,3 +1,5 @@
+// Camden Fischer
+//2/10/15
 //Write a program that prompts the user to enter two digits,
 //the first giving the number of counts on a cyclometer
 //and the second giving the number of seconds during
