@@ -8,24 +8,29 @@ public class WhichNumber {
         myScanner = new Scanner ( System.in );
         System.out.print("Think of a number between 1 and 10, and I will guess that number \nEnter all answers as true or false\n");
                 System.out.print("Is the number even? ");
-                if ( myScanner.nextBoolean() == true ) {
+                boolean even = myScanner.nextBoolean();
+                if ( even == true ) { //number is even
                     System.out.print("\nIs the number divisible by 3? ");
-                    if ( myScanner.nextBoolean() == true ) {
+                    boolean divisibleByThree = myScanner.nextBoolean();
+                    if ( divisibleByThree == true ) { //number is divisible by 3
                         System.out.println("\nYour number is 6"); }
-                    else if ( myScanner.nextBoolean() == false ) {
+                    else if ( divisibleByThree == false ) { //number is not divisible by 3
                         System.out.print("\nIs your number divisible by 4? ");
-                        if ( myScanner.nextBoolean() ==true ){
+                        boolean divisibleByFour = myScanner.nextBoolean();
+                        if ( divisibleByFour ==true ){ //n is divisible by 4
                             System.out.print("\nIs your number divided by four greater than one? ");
-                            if ( myScanner.nextBoolean() ==true) {
+                            boolean greaterThanOne = myScanner.nextBoolean();
+                            if ( greaterThanOne ==true ) { //n / 4 > 1
                                 System.out.println("\nYour number is 8"); }
-                            else if ( myScanner.nextBoolean() ==false) {
+                            else if ( greaterThanOne ==false) { // number /4 is not >1
                                 System.out.print("\nYour number is 4"); }
                         }
-                        else if (myScanner.nextBoolean() ==false) {
+                        else if ( divisibleByFour ==false) { //not divisible by 4
                             System.out.print("\nIs your number divisible by 5? ");
-                            if ( myScanner.nextBoolean() ==true) {
+                            boolean divisibleByFive = myScanner.nextBoolean();
+                            if ( divisibleByFive ==true) { // divisible by 5
                                 System.out.println("\nYour number is 10"); }
-                            else if ( myScanner.nextBoolean() ==false) {
+                            else if ( divisibleByFive ==false) { // not divisible by 5
                                 System.out.println("\nYour number is 2"); }
                             else {
                                 System.out.println("\nYou did not enter true or false "); }
@@ -36,26 +41,30 @@ public class WhichNumber {
                     else {
                         System.out.print("\nYou did not enter true or false "); }
                 }
-                else if ( myScanner.nextBoolean() ==false) {
+                else if ( even ==false) { //not even
                     System.out.print("\nIs your number divisible by 3? ");
-                    if ( myScanner.nextBoolean() ==true) {
+                    boolean divisibleByThree = myScanner.nextBoolean();
+                    if ( divisibleByThree ==true) { //divisible by 3
                         System.out.print("\nIs your number divided by 3 greater than one? ");
-                        if ( myScanner.nextBoolean() ==true) {
+                        boolean greaterThanOne = myScanner.nextBoolean();
+                        if ( greaterThanOne ==true) { // n/3>1
                             System.out.println("\nYour number is 9"); }
-                        else if ( myScanner.nextBoolean() ==false) {
+                        else if ( greaterThanOne ==false) { // n/3 not >1
                             System.out.println("\nYour number is 3"); }
                         else {
                             System.out.println("\nYou did not enter true or false "); }
                     }
-                    else if ( myScanner.nextBoolean() ==false) {
+                    else if ( divisibleByThree ==false) {
                         System.out.print("\nIs your number greater than 6? ");
-                        if ( myScanner.nextBoolean() ==true) {
+                        boolean greaterThanSix = myScanner.nextBoolean();
+                        if ( greaterThanSix ==true) {
                             System.out.println("\nYour number is 7"); }
-                        else if ( myScanner.nextBoolean() ==false) {
+                        else if ( greaterThanSix ==false) {
                             System.out.print("\nIs your number less than 3? ");
-                            if ( myScanner.nextBoolean() ==true) {
+                            boolean lessThanThree = myScanner.nextBoolean();
+                            if ( lessThanThree ==true) {
                                 System.out.println("\nYour number is 1"); }
-                            else if ( myScanner.nextBoolean() ==false) {
+                            else if ( lessThanThree==false) {
                                 System.out.println("\nYour number is 5"); }
                             else {
                                 System.out.print("\nYou did not enter true or false "); }
