@@ -14,23 +14,27 @@ public class Banking {
     public static void main (String[] args) {
         Scanner myScanner;
         myScanner = new Scanner ( System.in );
-        int balance = (int) (Math.random() * 4000 + 1000 );
-        System.out.println("Your current balance is $"+balance+ "\nPress 1 to deposit\nPress 2 to withdraw\nPress 3 to view final balance\n");
+        double balance = (double) (Math.random() * 4000 + 1000 ); //generates random number
+        //I will ask the use to enter 1 to deposit, 2 to withdraw, and 3 to view final balance
+        System.out.printf("Your current balance is $%.2f \nPress 1 to deposit\nPress 2 to withdraw\nPress 3 to view final balance\n", balance);
         int input = myScanner.nextInt();
-        if ( input == 1 ) { 
+        if ( input == 1 ) { //1 is for deposit
             System.out.print("How much would you like to deposit? ");
-            int deposit = myScanner.nextInt();
-            int finalBalance = (balance + deposit);
-            System.out.println("Your final balance is $"+finalBalance+"\n");
+            double deposit = myScanner.nextDouble();
+            double finalBalance = (balance + deposit); //final balance is equal to original plus deposit
+            System.out.printf("Your final balance is $%.2f \n", finalBalance);
         }
-        else if ( input == 2 ) {
+        else if ( input == 2 ) { //2 is for withdraw
             System.out.print("How much would you like to withdraw? ");
-            int withdraw = myScanner.nextInt();
-            int finalBalance = (balance - withdraw);
-            System.out.println("Your final balance is " +finalBalance+ "\n");
+            double withdraw = myScanner.nextDouble();
+            if ( withdraw <= balance ) { //withdraw can not be more than original balance
+                double finalBalance = (balance - withdraw);
+                System.out.printf("Your final balance is $%.2f \n", finalBalance); }
+            else {
+                System.out.println("You cannot withdraw more than your balance"); }    
         }
-        else if ( input == 3 ) {
-            System.out.println("Your final balance is $" +balance+ "\n");
+        else if ( input == 3 ) { //3 is to view final balance
+            System.out.printf("Your final balance is $%.2f \n", balance);
         }
         else {
             System.out.println("Not a valid input");
