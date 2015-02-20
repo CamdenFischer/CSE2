@@ -6,16 +6,7 @@ public class ToHex {
     public static void main(String[] args){
         Scanner myScanner;
         myScanner = new Scanner ( System.in );
-        
-        /*int r = 0;
-        int g = 0; //i have to declare these variables now
-        int b = 0; //so i can change them inside the if statements
-        int rOne = 0; //I need so many variables bc i chance each one twice
-        int rTwo = 0; //and there are two digits for each number
-        int gOne = 0;
-        int gTwo = 0;
-        int bOne = 0;
-        int bTwo = 0;*/
+        //first i have to get the three values
         System.out.println("Please enter R value:\n"); 
         if (myScanner.hasNextInt()){ //first if
             int r = myScanner.nextInt();
@@ -340,11 +331,9 @@ public class ToHex {
                             case 15:
                                  bTwoF = 'F';
                                 break;
-                                //if (rOne == 0) {
-                                    
-                                //}
+
                         } //end of switch6 - bTwoF
-                            //String f = rOneF + rTwoF + gOneF + gTwoF + bOneF + bTwoF;
+                        //now i print each digit
                             System.out.println(rTwoF+""+rOneF+""+gTwoF+""+gOneF+""+bTwoF+""+bOneF+"\n");
                     }
                     else {
