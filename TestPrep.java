@@ -4,7 +4,6 @@ public class TestPrep {
 	    Scanner myScanner;
 		myScanner = new Scanner( System.in );
 		int k = 22;
-        System.out.println("y");
-        System.out.println("y");
+        System.out.print(2 + 3 > 7 – 4 == 'a' > 'b');
 	} //main
 } //end of class
