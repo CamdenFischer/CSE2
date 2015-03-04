@@ -20,6 +20,6 @@ public class RunFactorial{
         else {
             System.out.println("Invalid input");
         }
-        System.out.print(fact);
+        System.out.print(fact+"\n");
         }//end of method
 }//end of class
