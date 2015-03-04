@@ -10,15 +10,15 @@ public class MakeSymbols{
         int int1 = (int) num;
         int count = 0;
         System.out.println("Random number generated: "+int1);
-        if (num % 2 != 0){
+        if (int1 % 2 == 0){
         do{
-            System.out.print("&");
+            System.out.print("*");
             count++;
             }while(count<num);
         }
-         else {
+         else if (num % 2 !=0) {
              do{
-                 System.out.print("*");
+                 System.out.print("&");
                  count++;
              }while(count<num);
          }   
