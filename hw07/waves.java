@@ -1,3 +1,6 @@
+//Camden Fischer
+//Write a program that forces the user to enter an integer between 1 and 30, 
+//inclusive, and then prints out displays that depend on the value entered
 import java.util.Scanner;
 public class waves{
     public static void main(String[] args){
