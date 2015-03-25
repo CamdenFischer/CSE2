@@ -15,6 +15,8 @@ public class HelloWorld{
         System.out.println("#######################");
         System.out.println("test");
         
+        
+        System.out.print( Math.random()*11);
         //test/testest
     }
 }
