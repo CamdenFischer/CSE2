@@ -1,3 +1,7 @@
+//Camden Fischer
+//3/24/15/
+//You are designing a GAME! YES! 
+//The main method is provided as below. Please read it carefully and write the missing methods. Please do not change the main method
 import java.util.Scanner;
 public class HW8{
     public static void main(String[] args) {
