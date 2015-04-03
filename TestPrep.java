@@ -1,9 +1,17 @@
 import java.util.Scanner;
 public class TestPrep {
 	public static void main(String[] args) {
-	    Scanner myScanner;
-		myScanner = new Scanner( System.in );
-		int k = 22;
-        System.out.print(2 + 3 > 7 – 4 == 'a' > 'b');
-	} //main
+		int num = 9;
+		int nSpaces = 0;
+		while (num > 0){
+			nSpaces = 0;
+			while (nSpaces < num){
+				System.out.print(" ");
+				nSpaces++;
+			}
+			System.out.print(num);
+			System.out.println("");
+			num--;
+		}
+	}
 } //end of class
